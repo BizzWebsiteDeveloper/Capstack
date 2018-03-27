@@ -14,6 +14,8 @@ import alap.com.capstack.R;
  */
 
 public class WelcomeScreenFragment1 extends Fragment {
+    TextView nextButton;
+
     /**
      * The fragment argument representing the section number for this
      * fragment.
@@ -31,9 +33,17 @@ public class WelcomeScreenFragment1 extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.fragment_welcome_screen, container, false);
+        nextButton=(TextView)rootView.findViewById(R.id.nextButton);
+        nextButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                NextClicked n=(NextClicked)getContext();
+                n.nextcliked();
+            }
+        });
         return rootView;
     }
     public interface NextClicked{
-        public void nextxlixked();
+        public void nextcliked();
     }
 }

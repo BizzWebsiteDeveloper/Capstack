@@ -9,10 +9,11 @@ import android.support.v4.view.ViewPager;
 import android.os.Bundle;
 
 import alap.com.capstack.R;
+import alap.com.capstack.custom.NonSwipeableViewPager;
 import alap.com.capstack.fragment.WelcomeScreenFragment1;
 import alap.com.capstack.fragment.WelcomeScreenFragment2;
 
-public class WelcomeScreen extends AppCompatActivity {
+public class WelcomeScreen extends AppCompatActivity implements WelcomeScreenFragment1.NextClicked {
 
     /**
      * The {@link android.support.v4.view.PagerAdapter} that will provide
@@ -27,45 +28,33 @@ public class WelcomeScreen extends AppCompatActivity {
     /**
      * The {@link ViewPager} that will host the section contents.
      */
-    private ViewPager mViewPager;
+    private NonSwipeableViewPager mViewPager;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_welcome_screen);
 
-//        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-//        setSupportActionBar(toolbar);
-        // Create the adapter that will return a fragment for each of the three
-        // primary sections of the activity.
+
         mSectionsPagerAdapter = new SectionsPagerAdapter(getSupportFragmentManager());
 
         // Set up the ViewPager with the sections adapter.
-        mViewPager = (ViewPager) findViewById(R.id.container);
+        mViewPager = (NonSwipeableViewPager) findViewById(R.id.container);
         mViewPager.setAdapter(mSectionsPagerAdapter);
 
 
-//        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-//        fab.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-//                        .setAction("Action", null).show();
-//            }
-//        });
+//
 
     }
 
+    @Override
+    public void nextcliked() {
+        mViewPager.setCurrentItem(1);
+    }
 
-    /**
-     * A placeholder fragment containing a simple view.
-     */
 
 
-    /**
-     * A {@link FragmentPagerAdapter} that returns a fragment corresponding to
-     * one of the sections/tabs/pages.
-     */
+
     public class SectionsPagerAdapter extends FragmentPagerAdapter {
 
         public SectionsPagerAdapter(FragmentManager fm) {
@@ -92,17 +81,6 @@ public class WelcomeScreen extends AppCompatActivity {
             return 2;
         }
 
-//        @Override
-//        public CharSequence getPageTitle(int position) {
-//            switch (position) {
-//                case 0:
-//                    return "SECTION 1";
-//                case 1:
-//                    return "SECTION 2";
-//                case 2:
-//                    return "SECTION 3";
-//            }
-//            return null;
-//        }
+
     }
 }
