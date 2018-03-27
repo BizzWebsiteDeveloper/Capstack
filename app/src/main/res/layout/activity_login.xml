@@ -1,11 +1,11 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-
-    >
+    android:background="@drawable/loginbackground"
+    tools:context="alap.com.capstack.activity.LoginActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -17,9 +17,9 @@
         <com.github.florent37.materialtextfield.MaterialTextField
             android:layout_width="300dp"
             android:layout_height="wrap_content"
-            app:mtf_image="@drawable/ic_phone_iphone_grey_600_24dp"
-            app:mtf_labelColor="#555"
             app:mtf_cardCollapsedHeight="4dp"
+            app:mtf_image="@drawable/ic_phone_iphone_grey_600_24dp"
+            app:mtf_labelColor="#FFFFFF"
             app:mtf_openKeyboardOnFocus="true">
 
 
@@ -41,9 +41,9 @@
         <com.github.florent37.materialtextfield.MaterialTextField
             android:layout_width="300dp"
             android:layout_height="wrap_content"
-            app:mtf_image="@drawable/ic_lock_outline_grey_600_24dp"
-            app:mtf_labelColor="#555"
             app:mtf_cardCollapsedHeight="4dp"
+            app:mtf_image="@drawable/ic_lock_outline_grey_600_24dp"
+            app:mtf_labelColor="#FFFFFF"
             app:mtf_openKeyboardOnFocus="true">
 
 
@@ -74,4 +74,5 @@
             android:text="Login"
             android:textColor="#fff" />
     </LinearLayout>
-</FrameLayout>
+
+</LinearLayout>

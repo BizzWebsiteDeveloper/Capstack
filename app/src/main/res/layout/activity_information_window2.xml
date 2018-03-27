@@ -66,26 +66,12 @@
                     android:text="@string/large_text" />
             </android.support.v7.widget.CardView>
 
-            <android.support.v7.widget.CardView
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rvInfo"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
+                android:nestedScrollingEnabled="false"
                 android:layout_marginBottom="30dp"
-                app:cardCornerRadius="5dp"
-                app:cardElevation="5dp"
-                app:layout_anchor="@id/toolbar_layout"
-                app:layout_anchorGravity="bottom">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="10dp"
-                    android:text="fsanfdsgsds
-dsf
-fsdf
-sfds
-fsd" />
-            </android.support.v7.widget.CardView>
+                android:layout_height="wrap_content"/>
         </LinearLayout>
     </android.support.v4.widget.NestedScrollView>
 

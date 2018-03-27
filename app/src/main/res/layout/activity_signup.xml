@@ -1,33 +1,76 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-
-    >
-
+    android:background="@drawable/loginbackground"
+    tools:context="alap.com.capstack.activity.SignupActivity">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_margin="20dp"
         android:gravity="center"
         android:orientation="vertical">
-
         <com.github.florent37.materialtextfield.MaterialTextField
             android:layout_width="300dp"
             android:layout_height="wrap_content"
             app:mtf_image="@drawable/ic_phone_iphone_grey_600_24dp"
-            app:mtf_labelColor="#555"
+            app:mtf_labelColor="#FFFFFF"
             app:mtf_cardCollapsedHeight="4dp"
             app:mtf_openKeyboardOnFocus="true">
 
 
             <EditText
-                android:id="@+id/edt_mobileno"
+                android:id="@+id/edt_name_signup"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Mobile no."
+                android:hint="Name"
+
+
+                android:inputType="text"
+                android:singleLine="true"
+                android:maxLength="10"
+                android:textColor="#333"
+                android:textSize="16sp" />
+
+        </com.github.florent37.materialtextfield.MaterialTextField> <com.github.florent37.materialtextfield.MaterialTextField
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        app:mtf_image="@drawable/ic_phone_iphone_grey_600_24dp"
+        app:mtf_labelColor="#FFFFFF"
+        app:mtf_cardCollapsedHeight="4dp"
+        app:mtf_openKeyboardOnFocus="true">
+
+
+        <EditText
+            android:id="@+id/edt_email_signup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enail Address"
+
+
+            android:inputType="text"
+            android:singleLine="true"
+            android:maxLength="10"
+            android:textColor="#333"
+            android:textSize="16sp" />
+
+    </com.github.florent37.materialtextfield.MaterialTextField>
+        <com.github.florent37.materialtextfield.MaterialTextField
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            app:mtf_image="@drawable/ic_phone_iphone_grey_600_24dp"
+            app:mtf_labelColor="#FFFFFF"
+            app:mtf_cardCollapsedHeight="4dp"
+            app:mtf_openKeyboardOnFocus="true">
+
+
+            <EditText
+                android:id="@+id/edt_whatsapp_signup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Whatsapp Number"
 
 
                 android:inputType="phone"
@@ -42,13 +85,13 @@
             android:layout_width="300dp"
             android:layout_height="wrap_content"
             app:mtf_image="@drawable/ic_lock_outline_grey_600_24dp"
-            app:mtf_labelColor="#555"
+            app:mtf_labelColor="#FFFFFF"
             app:mtf_cardCollapsedHeight="4dp"
             app:mtf_openKeyboardOnFocus="true">
 
 
             <EditText
-                android:id="@+id/edt_password"
+                android:id="@+id/edt_password_signup"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
 
@@ -61,7 +104,7 @@
         </com.github.florent37.materialtextfield.MaterialTextField>
 
         <Button
-            android:id="@+id/btn_login"
+            android:id="@+id/btn_signup"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
@@ -71,7 +114,7 @@
             android:layout_marginTop="10dp"
             android:background="@drawable/btn_round"
             android:elevation="3dp"
-            android:text="Login"
+            android:text="Signup"
             android:textColor="#fff" />
     </LinearLayout>
-</FrameLayout>
+</LinearLayout>

@@ -27,7 +27,9 @@
         <activity
             android:name=".activity.InformationWindow2"
             android:label="@string/title_activity_information_window2"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".activity.LoginActivity" />
+        <activity android:name=".activity.SignupActivity"></activity>
     </application>
 
 </manifest>
