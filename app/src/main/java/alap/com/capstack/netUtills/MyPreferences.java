@@ -16,7 +16,14 @@ public class MyPreferences {
     public static String PreferenceName="demoFireBase";
     public static String EncraptionKey="demoFireBase@123456";
 
-    public static String UID="u_id",UNAME="u_name",BALANCE="balance",UMOBILE="u_mobile",PB_ID="pb_id",UEMAIL="u_email",UCITY="u_city",UDOB="u_dob",UIMAGE="u_image",refreshedtoken="";
+    public static String id="id";
+    public static  String name="name";
+    public static String num="num";
+    public static   String email="email";
+    public static String pass="pass";
+    public static  String date="date";
+    public static  String status="status";
+    public static String soft="soft";
     public static String dashboard_tutorial="dashboard_tutorial";
     public static String batterystate="batterystate";
 //            ,refreshedtoken="",TYPE="type",POSITION="position",UDATE="u_date",UImei="u_imei",UInwardFlag="inward_flag",UDispatch_flag="dispatch_flag";

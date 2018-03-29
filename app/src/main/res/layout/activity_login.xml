@@ -18,20 +18,19 @@
             android:layout_width="300dp"
             android:layout_height="wrap_content"
             app:mtf_cardCollapsedHeight="4dp"
-            app:mtf_image="@drawable/ic_phone_iphone_grey_600_24dp"
+            app:mtf_image="@drawable/ic_markunread_grey_600_24dp"
             app:mtf_labelColor="#FFFFFF"
             app:mtf_openKeyboardOnFocus="true">
 
 
             <EditText
-                android:id="@+id/edt_mobileno"
+                android:id="@+id/edt_email"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Mobile no."
+                android:hint="Email Address."
 
 
-                android:inputType="phone"
-                android:maxLength="10"
+                android:inputType="textEmailAddress"
                 android:textColor="#333"
                 android:textSize="16sp" />
 

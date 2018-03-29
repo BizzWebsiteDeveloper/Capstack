@@ -13,7 +13,7 @@ import alap.com.capstack.custom.NonSwipeableViewPager;
 import alap.com.capstack.fragment.WelcomeScreenFragment1;
 import alap.com.capstack.fragment.WelcomeScreenFragment2;
 
-public class WelcomeScreen extends AppCompatActivity implements WelcomeScreenFragment1.NextClicked {
+public class WelcomeScreen extends AppCompatActivity implements WelcomeScreenFragment1.NextClicked,WelcomeScreenFragment2.PrevClicked {
 
     /**
      * The {@link android.support.v4.view.PagerAdapter} that will provide
@@ -52,7 +52,10 @@ public class WelcomeScreen extends AppCompatActivity implements WelcomeScreenFra
         mViewPager.setCurrentItem(1);
     }
 
-
+    @Override
+    public void prevcliked() {
+        mViewPager.setCurrentItem(0);
+    }
 
 
     public class SectionsPagerAdapter extends FragmentPagerAdapter {

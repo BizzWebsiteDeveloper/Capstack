@@ -37,6 +37,8 @@ public class GlobalElements extends Application {
     public static Matrix m;
     public static File file=null;
     public static Bitmap bmap;
+    public static String username="CapsTakeUser";
+    public static String pwd="$Caps06&Take#";
 
     @Override
     protected void attachBaseContext(Context base) {

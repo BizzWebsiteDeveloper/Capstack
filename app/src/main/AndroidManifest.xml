@@ -29,7 +29,15 @@
             android:label="@string/title_activity_information_window2"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".activity.LoginActivity" />
-        <activity android:name=".activity.SignupActivity"></activity>
+        <activity android:name=".activity.SignupActivity" />
+        <activity
+            android:name=".activity.ProfilePage"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.SoftwareDetail"
+            android:label="@string/title_activity_software_detail"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".activity.ConceptActivity"></activity>
     </application>
 
 </manifest>

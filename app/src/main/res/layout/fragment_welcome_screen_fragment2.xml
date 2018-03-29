@@ -18,20 +18,19 @@
             android:layout_width="300dp"
             android:layout_height="wrap_content"
             app:mtf_image="@drawable/ic_phone_iphone_grey_600_24dp"
-            app:mtf_labelColor="#555"
+            app:mtf_labelColor="@color/white"
             app:mtf_cardCollapsedHeight="4dp"
             app:mtf_openKeyboardOnFocus="true">
 
 
             <EditText
-                android:id="@+id/edt_mobileno"
+                android:id="@+id/edt_email"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Mobile no."
+                android:hint="Email or username"
 
 
-                android:inputType="phone"
-                android:maxLength="10"
+                android:inputType="textEmailAddress"
                 android:textColor="#333"
                 android:textSize="16sp" />
 
@@ -42,7 +41,7 @@
             android:layout_width="300dp"
             android:layout_height="wrap_content"
             app:mtf_image="@drawable/ic_lock_outline_grey_600_24dp"
-            app:mtf_labelColor="#555"
+            app:mtf_labelColor="@color/white"
             app:mtf_cardCollapsedHeight="4dp"
             app:mtf_openKeyboardOnFocus="true">
 
@@ -73,5 +72,17 @@
             android:elevation="3dp"
             android:text="Login"
             android:textColor="#fff" />
+        <ImageView
+            android:id="@+id/prevButton"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="bottom|center"
+            android:background="@drawable/circle_profile"
+            android:backgroundTint="@color/colorPrimary"
+            android:layout_marginBottom="40dp"
+            android:src="@drawable/ic_keyboard_arrow_left_white_24dp" />
     </LinearLayout>
+
+
 </FrameLayout>

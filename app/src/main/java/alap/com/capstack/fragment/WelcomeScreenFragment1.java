@@ -5,6 +5,8 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import alap.com.capstack.R;
@@ -14,7 +16,7 @@ import alap.com.capstack.R;
  */
 
 public class WelcomeScreenFragment1 extends Fragment {
-    TextView nextButton;
+    ImageView nextButton;
 
     /**
      * The fragment argument representing the section number for this
@@ -33,7 +35,7 @@ public class WelcomeScreenFragment1 extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.fragment_welcome_screen, container, false);
-        nextButton=(TextView)rootView.findViewById(R.id.nextButton);
+        nextButton=(ImageView)rootView.findViewById(R.id.nextButton);
         nextButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
